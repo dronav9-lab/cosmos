@@ -1,0 +1,3 @@
+.planet-hero-image.venus{object-position:right center}
+.planet-image-credit a{display:inline-flex;align-items:center;gap:3px;margin-left:7px;color:#dce6ee;text-decoration:underline;text-decoration-color:rgba(220,230,238,.4);text-underline-offset:3px}
+.planet-image-credit a:focus-visible{outline:2px solid #a8c9e7;outline-offset:3px}

@@ -1,0 +1,8 @@
+.continue-section{padding:74px var(--gutter) 78px;background:#0b1017;border-top:1px solid rgba(221,231,241,.08);border-bottom:1px solid rgba(221,231,241,.08)}
+.continue-layout{display:flex;align-items:end;justify-content:space-between;gap:42px;margin-top:31px}
+.continue-layout h2{font:400 clamp(44px,5vw,62px)/1 var(--serif);letter-spacing:-.025em;margin:0 0 16px}
+.continue-layout h2 em{color:#9cb9d3;font-weight:400}
+.continue-layout p{max-width:530px;color:#b5c0ca;font-size:17px;line-height:1.7;margin:0}
+.continue-layout p strong{color:#e4ebf1;font-weight:500}
+.continue-layout .button-primary{flex:none;min-width:205px;font-size:13px}
+@media(max-width:760px){.continue-section{padding:58px 24px 62px}.continue-layout{align-items:flex-start;flex-direction:column;gap:22px;margin-top:27px}.continue-layout p{font-size:16px}}

@@ -1,0 +1,120 @@
+/* ORBITAL reading scale. Kept at the app entry point so route styles cannot
+   silently undo the minimum sizes below. */
+:root {
+  --type-caption: clamp(13px, 1vw, 15px);
+  --type-small: clamp(14px, 1.08vw, 16px);
+  --type-body: clamp(16px, 1.2vw, 19px);
+  --type-ui: clamp(14px, 1.05vw, 16px);
+}
+
+/* Landing page metadata, navigation, descriptions, planet list and footer. */
+main .desktop-nav a,
+main .header-cta,
+main .mobile-nav a,
+main .text-link { font-size: var(--type-ui) !important; }
+main .eyebrow,
+main .section-kicker,
+main .hero-index,
+main .index-label,
+main .scroll-cue,
+main .image-credit,
+main .fact-label,
+main .planet-count,
+main .planet-type,
+main .quote-credit,
+main .footer-meta { font-size: var(--type-caption) !important; }
+main .hero-deck,
+main .intro-text p,
+main .learning-content p,
+main .planet-detail,
+main .system-note { font-size: var(--type-body) !important; }
+main .footer-meta { color: #b1bdc8; letter-spacing: .08em; }
+main .image-credit,
+main .fact-label,
+main .planet-detail,
+main .quote-credit { color: #b4bfca; }
+
+/* Solar-system explorer: make controls, scene annotations and facts readable. */
+.explorer-page .back-link,
+.explorer-page .scene-control,
+.explorer-page .planet-pick,
+.explorer-page .planet-source { font-size: var(--type-ui) !important; }
+.explorer-page .explorer-title-row p,
+.explorer-page .planet-fact > p,
+.explorer-page .selected-stats dd { font-size: var(--type-body) !important; }
+.explorer-page .system-count,
+.explorer-page .system-count small,
+.explorer-page .scene-state,
+.explorer-page .planet-panel-label,
+.explorer-page .scene-scale-note,
+.explorer-page .scene-instruction,
+.explorer-page .scene-caption,
+.explorer-page .pick-index,
+.explorer-page .selected-kind,
+.explorer-page .selected-stats dt,
+.explorer-page .selected-stats dd small,
+.explorer-page .explorer-footer { font-size: var(--type-caption) !important; }
+.explorer-page .scene-state,
+.explorer-page .planet-panel-label,
+.explorer-page .scene-caption,
+.explorer-page .explorer-footer,
+.explorer-page .pick-index,
+.explorer-page .selected-kind,
+.explorer-page .selected-stats dt,
+.explorer-page .selected-stats dd small,
+.explorer-page .system-count small { color: #b5c0cb; }
+.explorer-page .scene-caption,
+.explorer-page .explorer-footer { line-height: 1.55; }
+.explorer-page .explorer-footer { flex-wrap: wrap; }
+
+/* Planet guide and interactive preview. */
+.planet-detail-page .planet-header-title,
+.planet-detail-page .planet-back-link,
+.planet-detail-page .mission-note > span,
+.planet-detail-page .mission-note a,
+.planet-detail-page .planet-detail-footer > span,
+.planet-detail-page .planet-detail-footer > a:last-child { font-size: var(--type-caption) !important; }
+.planet-detail-page .planet-hero-copy > p,
+.planet-detail-page .planet-story-copy > p,
+.planet-detail-page .mission-note p { font-size: var(--type-body) !important; }
+.planet-detail-page .planet-image-credit,
+.planet-detail-page .planet-quickfacts dt,
+.planet-detail-page .planet-quickfacts dd small,
+.planet-detail-page .planet-story-index,
+.planet-detail-page .planet-neighbours > a > span,
+.planet-detail-page .planet-neighbours .all-planets,
+.planet-detail-page .planet-neighbours .all-planets span { font-size: var(--type-caption) !important; }
+.planet-detail-page .planet-image-credit,
+.planet-detail-page .planet-quickfacts dt,
+.planet-detail-page .planet-quickfacts dd small,
+.planet-detail-page .planet-story-index,
+.planet-detail-page .planet-neighbours > a > span,
+.planet-detail-page .planet-neighbours .all-planets span,
+.planet-detail-page .planet-detail-footer > span { color: #b6c1cc; }
+.planet-detail-page .planet-preview-controls button { font-size: var(--type-ui) !important; }
+.planet-detail-page .planet-preview-hint,
+.planet-detail-page .planet-preview-caption,
+.planet-detail-page .planet-preview-caption span { font-size: var(--type-caption) !important; }
+.planet-detail-page .planet-preview-hint,
+.planet-detail-page .planet-preview-caption span { color: #c0cad4; }
+
+@media (max-width: 760px) {
+  :root {
+    --type-caption: 12px;
+    --type-small: 13px;
+    --type-body: 16px;
+    --type-ui: 14px;
+  }
+  main .image-credit { max-width: min(72vw, 340px); line-height: 1.5; }
+  .planet-detail-page .planet-image-credit { font-size: 12px !important; }
+  .planet-detail-page .planet-preview-hint { max-width: 50%; text-align: right; line-height: 1.5; }
+  .planet-detail-page .planet-preview-caption { max-width: 62%; line-height: 1.5; }
+  .planet-detail-page .planet-neighbours .all-planets { font-size: 13px !important; }
+  .planet-detail-page .planet-neighbours .all-planets span { font-size: 12px !important; }
+}
+
+@media (max-width: 380px) {
+  main .eyebrow,
+  main .fact-label { font-size: 12px !important; }
+  .planet-detail-page .planet-neighbours > a > span { letter-spacing: .04em; }
+}
